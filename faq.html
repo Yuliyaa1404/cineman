@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="faq.css">
+	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" />
+	<link
+	rel="stylesheet"
+	href="https://unpkg.com/swiper/swiper-bundle.min.css"
+ />
+	<title>Movie</title>
+</head>
+<body>
+	<div id="head"></div>
+	<div class="modal-search modal">
+		<input class="modal__input" type="text" placeholder="Search">
+		<div class="modal-search__wrapper modal-wrapper">
+			<div class="modal-search__content"></div>
+			<!-- <div class="modal-search__empty">Nothing found Refine your request or choose a movie from our users' top list</div> -->
+		</div>
+		<a href="" class="modal-search__btn">all results</a>
+	</div>
+	<div class="modal-like modal">
+		<div class="modal-like__wrapper modal-wrapper">
+			<div class="modal-like__content"></div>
+			<div class="empty">There is no favourite movies</div>
+		</div>
+		<a href="favorite.html" class="modal-like__btn modal-btn">full list</a>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="main.html" class="header__logo">Cineman</a>
+				<ul class="header__menu">
+					<li><a href="main.html">home</a></li>
+					<li><a href="search.html">catalogue</a></li>
+					<li><a href="favorite.html">my movies</a></li>
+					<li class="menu-active"><a href="faq.html">faq</a></li>
+				</ul>
+				<div class="header__icons">
+					<div class="header__search"><i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+					<div class="header__bookmark"><i class="fa-solid fa-bookmark"></i></div>
+					<p class="bookmark-count"></p>
+					<div class="header__switcher">
+						<div class="header__thumb"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="faq">
+		<div class="container">
+			<div class="faq__wrapper">
+				<ul class="faq__category">
+					<li data-id="all" class="category all">All questions</li>
+					<li data-id="common" class="category">Common questions</li>
+					<li data-id="payment" class="category">Subscribe and payment</li>
+					<li data-id="app" class="category">Devices and applications</li>
+				</ul>
+				<div class="faq__body">
+					<input type="text" class="faq__search" placeholder="Search">
+					<ul data-id="common" class="faq__block faq__common">
+						<h2 class="faq__subtitle">Common questions</h2>
+						<li class="faq__question">How soon after the broadcast does the movies appear?
+							<p class="faq__answer">The movies usually appear simultaneously with the premiere in the USA, taking into account the time difference. The difference can be several hours – this time is needed for translation and subtitles overlay. </p>
+						</li>
+						<li class="faq__question">What is a rental?
+							<p class="faq__answer">Rental is a time–limited access to a certain series. A one-time purchase of one series for rent is limited to a period of up to 60 days.</p>
+						</li>
+						<li class="faq__question">Is it possible to buy the movies forever?
+							<p class="faq__answer">Some movies are available for purchase with unlimited access. In the service, they are marked with the text "The series is available for purchase forever and is not included in the main subscription". </p>
+						</li>
+					</ul>
+					<ul data-id="payment" class="faq__block faq__payment">
+						<h2 class="faq__subtitle">Subscribe and payment</h2>
+						<li class="faq__question">How do I subscribe?
+							<p class="faq__answer">To subscribe, register in the service or log in to an existing account, go to the "Purchases" section and select the subscription you are interested in.</p>
+						</li>
+						<li class="faq__question">How do I buy a subscription to the service?
+							<p class="faq__answer">You can buy a subscription: using the mobile version of the website in a browser on a mobile device or in the Amediateka app on iOS, Android, Android TV, Apple TV and Smart TV.</p>
+						</li>
+						<li class="faq__question">How do I find out what is included in the subscription?
+							<p class="faq__answer">The main subscription includes all series and films of the service, with the exception of several projects that are sold separately.
+
+							</p>
+						</li>
+					</ul>
+					<ul data-id="app" class="faq__block faq__apps">
+						<h2 class="faq__subtitle">Devices and applications</h2>
+						<li class="faq__question">Installing the app on iOS
+							<p class="faq__answer">Go to the Apple Store </p>
+						</li>
+						<li class="faq__question">How do I buy a subscription to the service?
+							<p class="faq__answer">You can buy a subscription on the Amediateka website: using the mobile version of the website in a browser on a mobile device or in app on iOS, Android, Android TV, Apple TV and Smart TV.</p>
+						</li>
+						<li class="faq__question">How to connect/disconnect Smart TV?
+							<p class="faq__answer">The main subscription includes all series and films of the service, with the exception of several projects that are sold separately.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__top">
+					<div class="footer__item">
+						<h5 class="footer__label">Quick Links</h5>
+						<ul class="footer__menu">
+							<li><a href="search.html">Search movie</a></li>
+							<li><a href="filter.html">Find your movie</a></li>
+							<li><a href="favorite.html">My movies</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h5 class="footer__label">Newsletter</h5>
+						<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt odio iure animi ullam quam, deleniti rem!</p>
+						<div class="footer__form">
+							<input type="email" name="useremail" placeholder="Email">
+							<a href="" class="footer__btn">Send</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyrights">Copyright ©2022 All rights reserved | This template is made with  by me</div>
+			</div>
+			<a href="#head" class="footer__arrow"><i class="fa-solid fa-arrow-up"></i></a>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="faq.js"></script>
+</body>
+</html>
